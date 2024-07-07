@@ -1,12 +1,22 @@
+import { createBrowserRouter } from 'react-router-dom';
+import { Layout } from './components/layout';
+import { Home } from './pages/home';
+import { Blog } from './pages/blog';
 
-function App() {
-  return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world! Meu Portfolio Dev
-      </h1>
-    </div>
-  )
-}
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/blog",
+        element: <Blog />
+      }
+    ]
+  }
+])
 
-export default App
+export { router }
