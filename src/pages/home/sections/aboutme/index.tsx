@@ -4,11 +4,21 @@ export function AboutMe() {
   return (
     <section className="py-40 px-6 sm:px-10 lg:px-20 bg-gradient-to-b from-beautyNoir to-beautyBrunette">
       <div className="max-w-7xl mx-auto border border-black/50 bg-black/30 p-8 rounded-3xl">
-        <div className="">
+        <div>
           <div className="flex justify-between gap-3">
             <div className='md:text-justify'>
-              <h2 className="text-base font-semibold tracking-wider text-white uppercase">Sobre Mim</h2>
-              <p className="my-6 text-2xl sm:text-4xl leading-8 font-bold tracking-tighter text-tertiary">
+              <h2
+                className="text-base font-semibold tracking-wider text-white uppercase"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                Sobre Mim
+              </h2>
+              <p
+                className="my-6 text-2xl sm:text-4xl leading-8 font-bold tracking-tighter text-tertiary"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 Sou Desenvolvedor Web
                 <br />Front End
               </p>
@@ -18,13 +28,19 @@ export function AboutMe() {
                   src={aspas}
                   alt="Aspas" 
                   className="w-20 h-20"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
                 />
               </div>
             </div>
           </div>
           <div>  
             <div className='flex flex-col-reverse md:flex-row'>
-              <p className="my-8 text-xl text-tertiary lg:mx-auto md:pr-24 text-justify">
+              <p
+                className="my-8 text-xl text-tertiary lg:mx-auto md:pr-24 text-justify"
+                data-aos="fade-up-right"
+                data-aos-duration="1000"
+              >
                 Olá! Sou Alex Heisenberg, um apaixonado desenvolvedor de sites corporativos e
                 aplicativos web com mais de 3 anos de experiência. Baseado em Pernambuco, trabalho
                 remotamente, garantindo serviços de qualidade para clientes em qualquer lugar do mundo.
@@ -36,7 +52,8 @@ export function AboutMe() {
                 src="https://avatars.githubusercontent.com/u/82345139?v=4"
                 alt="Avatar"
                 className="rounded-full border border-l-tertiary w-[45%] sm:w-[55%] md:w-[85%] mx-auto z-50 min-w-[200px] mb-4"
-                data-aos="zoom-in-left" data-aos-duration="1000"
+                data-aos="zoom-in-left"
+                data-aos-duration="1000"
                 />
             </div>
           </div>
