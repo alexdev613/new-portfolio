@@ -10,26 +10,28 @@ import viteIcon from '../../../../assets/vite.svg'
 import firebaseIcon from '../../../../assets/firebase-plain.svg'
 import gitIcon from '../../../../assets/git.svg'
 import githubIcon from '../../../../assets/github-original.svg'
+import { Link } from 'react-router-dom'
 
 interface Skill {
     id: string;
     technologyIcon: string;
     name: string;
+    url: string;
   }
   
   const skills: Skill[] = [
-    { id: '1', technologyIcon: htmlIcon, name: 'HTML' },
-    { id: '2', technologyIcon: cssIcon, name: 'CSS' },
-    { id: '3', technologyIcon: jsIcon, name: 'JavaScript' },
-    { id: '4', technologyIcon: tsIcon, name: "TypeScript"},
-    { id: '5', technologyIcon: tailwindIcon, name: "TailWind"},
-    { id: '6', technologyIcon: styledIcon, name: "Styled-Components"},
-    { id: '7', technologyIcon: reactIcon, name: "React JS"},
-    { id: '8', technologyIcon: nodeIcon, name: "Node JS"},
-    { id: '9', technologyIcon: viteIcon, name: "Vite"},
-    { id: '10', technologyIcon: firebaseIcon, name: "Firebase"},
-    { id: '11', technologyIcon: gitIcon, name: "Git"},
-    { id: '12', technologyIcon: githubIcon, name: "Github"}
+    { id: '1', technologyIcon: htmlIcon, name: 'HTML', url: "https://developer.mozilla.org/pt-BR/docs/Web/HTML"},
+    { id: '2', technologyIcon: cssIcon, name: 'CSS', url: "https://developer.mozilla.org/pt-BR/docs/Web/CSS"},
+    { id: '3', technologyIcon: jsIcon, name: 'JavaScript', url: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"},
+    { id: '4', technologyIcon: tsIcon, name: "TypeScript", url: "https://www.typescriptlang.org/pt/docs/"},
+    { id: '5', technologyIcon: tailwindIcon, name: "TailWind", url: "https://tailwindcss.com/docs/installation"},
+    { id: '6', technologyIcon: styledIcon, name: "Styled-Components", url: "https://styled-components.com/docs"},
+    { id: '7', technologyIcon: reactIcon, name: "React JS", url: "https://pt-br.legacy.reactjs.org/docs/getting-started.html"},
+    { id: '8', technologyIcon: nodeIcon, name: "Node JS", url: "https://nodejs.org/docs/latest/api/documentation.html"},
+    { id: '9', technologyIcon: viteIcon, name: "Vite", url: "https://vitejs.dev/"},
+    { id: '10', technologyIcon: firebaseIcon, name: "Firebase", url: "https://firebase.google.com/docs/guides?hl=pt-br"},
+    { id: '11', technologyIcon: gitIcon, name: "Git", url: "https://git-scm.com/docs/git/pt_BR"},
+    { id: '12', technologyIcon: githubIcon, name: "Github", url: "https://github.com/alexdev613/"}
   ];
 
 export function Skills() {
@@ -37,11 +39,21 @@ export function Skills() {
     <section className="bg-beautyBrunette min-h-screen py-40 px-6 sm:px-10 lg:px-20">
       <div className="max-w-7xl mx-auto border border-black/50 bg-black/30 p-8 rounded-3xl">
         <h1 className="text-white text-3xl text-center font-sans font-bold pb-4">Hard Skills</h1>
+        <div className='text-center text-tertiary pb-2 leading-loose'>
+          <p>Abaixo estão algumas das tecnologias que utilizo.</p>
+          <p>Clique nos ícones e descubra um pouco mais!</p>
+        </div>
         <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
           {skills.map((skill) => (
-            <div key={skill.id} className='h-36 w-36 flex flex-col items-center gap-2' data-aos="flip-up" data-aos-duration="1500">
-              <img src={skill.technologyIcon} alt={skill.name} className='h-16 w-16' />
-              <p className='text-white'>{skill.name}</p>
+            <div key={skill.id} className='h-36 w-36' data-aos="flip-up" data-aos-duration="1500">
+              <Link
+                to={skill.url}
+                target='_blank'
+                className='flex flex-col items-center'
+              >
+                <img src={skill.technologyIcon} alt={skill.name} className='h-16 w-16' />
+                <p className='text-white'>{skill.name}</p>
+              </Link>
             </div>
           ))}
         </div>
