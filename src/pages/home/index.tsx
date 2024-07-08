@@ -1,3 +1,4 @@
+import { AboutMe } from "./sections/aboutme";
 import { Hero } from "./sections/hero";
 
 export function Home() {
@@ -5,6 +6,7 @@ export function Home() {
       <div>
 
         <Hero />
+        <AboutMe />
       </div>
     )
   }

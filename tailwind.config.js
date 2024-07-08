@@ -15,7 +15,8 @@ export default {
         tertiary: '#E0E1DD',
         beltColor: '#1D2639',
         beautyNoir: "#232323",
-        beautyBrunette: "#343434"
+        beautyBrunette: "#343434",
+        barbarianColor: "#0c2135",
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
