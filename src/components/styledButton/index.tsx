@@ -1,21 +1,30 @@
-import { ReactNode } from "react";
+import { HTMLProps } from "react";
+import { Link } from "react-router-dom";
 
-interface StyledButtonProps {
-  children: ReactNode;
-  onClick: () => void;
+interface StyledButtonProps extends Omit <HTMLProps<HTMLButtonElement>, 'type'> {
+  to?: string;
+  type: 'submit' | 'reset' | 'button';
 }
 
-export function StyledButton({ children, onClick }: StyledButtonProps) {
-  return (
+export function StyledButton({ to, children, ...props }: StyledButtonProps ) {
+  
+  const styles = "bg-transparent border border-white rounded px-0 py-1 w-full text-white inline-flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-200 hover:text-beautyNoir transition duration-700 px-3"
+
+  const buttonContent = (
     <button
-      onClick={onClick}
-      className="bg-transparent border border-white rounded px-0 py-1 w-full
-      text-white inline-flex items-center justify-center gap-2 cursor-pointer
-      hover:bg-gray-200 hover:text-beautyNoir transition duration-700"
+      {...props}
+      className={styles}
     >
       {children}
     </button>
   );
-};
 
-export default StyledButton;
+  return to ? (
+    <Link to={to} target="_blank">
+      {buttonContent}
+    </Link>
+  ) : (
+    buttonContent
+  );
+  
+};

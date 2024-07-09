@@ -1,6 +1,6 @@
 import { MdDownload, MdOutlineMailOutline } from "react-icons/md";
 import { AnimatedBackground } from "../../../../components/animatedBackground";
-import StyledButton from "../../../../components/styledButton";
+import { StyledButton } from "../../../../components/styledButton";
 
 
 export function Hero() {
@@ -25,15 +25,21 @@ export function Hero() {
             <h1 className="font-gothic font-normal text-tertiary text-4xl md:text-6xl md:mb-4 mb-2" data-aos="fade-left" data-aos-duration="1000">Alex Heisenberg</h1>
             <h2 className="font-gothic font-extralight text-tertiary text-2xl md:text-3xl pb-2"  data-aos="fade-right" data-aos-duration="1000">I'm a Software Engineer</h2>
             <div className="flex flex-wrap justify-center pt-3 space-y3 md:space-y-0 md:space-x-3">
-              <div className="w-full flex flex-col md:flex-row justify-center gap-5" data-aos="fade-up-left" data-aos-duration="1200">
+              <div className="w-full flex flex-col md:flex-row justify-center gap-5">
                 <StyledButton
                   onClick={() => {}}
+                  type={'button'}
+                  data-aos="fade-up-right"
+                   data-aos-duration="1200"
                 >
                   <MdDownload size={20}  />
                   Download CV
                 </StyledButton>
                 <StyledButton
                   onClick={() => {}}
+                  type={'button'}
+                  data-aos="fade-up-left"
+                  data-aos-duration="1200"
                 >
                   <MdOutlineMailOutline size={20}  />
                   Download CV
