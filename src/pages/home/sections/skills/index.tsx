@@ -40,8 +40,8 @@ export function Skills() {
       <div className="max-w-7xl mx-auto border border-black/50 bg-black/30 p-8 rounded-3xl">
         <h1 className="text-white text-3xl text-center font-sans font-bold pb-4">Hard Skills</h1>
         <div className='text-center text-tertiary pb-2 leading-loose'>
-          <p>Abaixo estão algumas das tecnologias que utilizo.</p>
-          <p>Clique nos ícones e descubra um pouco mais!</p>
+          <p data-aos="fade-right" data-aos-duration="2000">Abaixo estão algumas das tecnologias que utilizo.</p>
+          <p data-aos="fade-left" data-aos-duration="2000">Clique nos ícones e descubra um pouco mais!</p>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
           {skills.map((skill) => (
