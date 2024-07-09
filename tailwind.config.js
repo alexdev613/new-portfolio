@@ -21,6 +21,9 @@ export default {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
         gothic: ['Gothic A1', 'sans-serif']
+      },
+      screens: {
+        'screen-sm': "480px"
       }
     },
   },
