@@ -66,14 +66,14 @@ export function Projects() {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="max-w-5xl flex flex-col justify-between md:flex-row min-h-80 rounded-3xl bg-beautyNoir border overflow-hidden mb-10"
+          className="max-w-5xl flex flex-col justify-between md:flex-row min-h-80 rounded-3xl bg-beautyNoirToBrunette overflow-hidden mb-10"
           data-aos="flip-down"
           data-aos-duration="1000"
         >
-          <div className="bg-transparent flex-1 p-4">
-            <img src={project.imageProject} alt="" className='w-full h-full min-h-72 object-fill rounded-xl' />
+          <div className="flex-1 p-4">
+            <img src={project.imageProject} alt="" className='w-full h-full min-h-64 object-fill rounded-xl' />
           </div>
-          <div className='flex flex-col flex-1 bg-beautyNoir'>
+          <div className='flex flex-col flex-1'>
             <div className="p-4 pb-0">
               <div className='flex-1 pb-4 flex flex-col screen-sm:flex-row screen-sm:justify-between items-center'>
                 <div className='pb-4'>
