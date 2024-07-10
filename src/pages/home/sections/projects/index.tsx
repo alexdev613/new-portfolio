@@ -25,7 +25,7 @@ const projects: ProjectProps[] = [
   {
     id: '1',
     title: 'Controle de Finanças',
-    description: "Sistema de controle de finanças, onde é possível calcular as receitas e despesas, onde o usuário pode passar a descrição o valor e o tipo da inlusão, ao clicar no botão incluir é passado os dados para uma lista, e os cálculos das receitas e das despesas é atualizado em boxes acima. Este projeto foi feito com HTML, CSS e Vanilla JavaScript (Java Script Puro).",
+    description: "Sistema de controle de finanças, onde é possível calcular as receitas e despesas, onde o usuário pode passar a descrição o valor e o tipo da inlusão, ao clicar no botão incluir é passado os dados para uma lista, e os cálculos das receitas e das despesas é atualizado em boxes acima.\n Este projeto foi feito com HTML, CSS e Vanilla JavaScript (Java Script Puro).",
     imageProject: controle,
     repository: "",
     deployUrl: "https://controledefinancas-alexdev613.netlify.app/",
@@ -34,16 +34,16 @@ const projects: ProjectProps[] = [
   {
     id: "2",
     title: "WebCarros",
-    description: "Sistema de cadastro de carros à venda, similar ao Webmotors, feito com React, TailwindCSS, TypeScript e Firebase dentre outras tecnologias. Permite cadastro e login de usuários, que podem ver carros à venda na Home e cadastrar seus próprios veículos com detalhes como nome, ano, quilometragem, modelo, valor e imagens. Inclui um painel para gerenciamento dos carros cadastrados, onde o usuário pode ver e excluir seus carros. Foi utilizado Context API gara gerenciar estados glodais e compartilhamento de dados. A Home e a página de Detalhes do carro é acessível a todos, enquanto as páginas administrativas são restritas a usuários logados.",
+    description: "O projeto WebCarros é um sistema semelhante ao Webmotors, desenvolvido com React, TailwindCSS, TypeScript e Firebase.\nEle permite cadastro e login de usuários para ver e cadastrar carros à venda. Inclui um painel de gerenciamento para visualizar e excluir veículos cadastrados.\nA Home e os detalhes dos carros são acessíveis a todos, com páginas administrativas restritas a usuários logados, usando Context API para gerenciar estados globais e compartilhar dados.",
     imageProject: webcarros,
     repository: "https://github.com",
-    deployUrl: "https://github.com",
+    deployUrl: "https://webcarros-dev.vercel.app/",
     technologies: [ react, tailwind, typescript, firebase]
   },
   {
     id: '3',
     title: 'CriptoDev',
-    description: "Sistema de consulta de criptomoedas em tempo real, utilizando requisições HTTP e chamada de APIs, uma para trazer uma listagem de mais de 400 criptomoedas e outra para cotação do dólar para nossa moeda, Real. Ao clicar sobre o nome da moeda, o usuário é levao a página de detalhes da mesma, onde ele confere dados importantes e atuais. Na página principal é listada 10 moedas, e se clicar no botão 'Carregar mais' são carregadas mais 10 moedas. Esse projeto foi feito com React, CSS, TypeScript e outras ferramentas preciosas!",
+    description: "O projeto usa requisições HTTP e APIs para consultar mais de 400 criptomoedas em tempo real, incluindo a cotação do dólar para Real. Os usuários podem ver detalhes das moedas ao clicar em seus nomes. A página inicial lista 10 moedas e permite carregar mais 10 com o botão 'Carregar mais'.\nEste projeto foi feito com React, CSS, TypeScript e outras tecnologias preciosas!",
     imageProject: criptoapp,
     repository: 'https://github.com',
     deployUrl: 'https://criptoapp-alexdev.vercel.app/',
@@ -53,18 +53,25 @@ const projects: ProjectProps[] = [
 
 export function Projects() {
   return (
-    <section className="min-h-screen bg-beautyBrunette py-20 px-6 sm:px-10 lg:px-20">
-      <h1 className="text-white text-3xl font-bold pb-10" data-aos="fade-left" data-aos-duration="1000">Portfolio</h1>
+    <section className="min-h-screen flex flex-col items-center bg-beautyBrunette py-20 px-6 sm:px-10 lg:px-20">
+      
+      <div className="max-w-5xl w-full mb-16">
+        <h1
+          className="text-white text-3xl font-bold"
+          data-aos="fade-left"
+          data-aos-duration="1000">Portfolio
+        </h1>
+      </div>
 
       {projects.map((project) => (
         <div
           key={project.id}
-          className="flex flex-col justify-between md:flex-row min-h-80 rounded-3xl bg-beautyNoir border overflow-hidden mb-10"
+          className="max-w-5xl flex flex-col justify-between md:flex-row min-h-80 rounded-3xl bg-beautyNoir border overflow-hidden mb-10"
           data-aos="flip-down"
           data-aos-duration="1000"
         >
           <div className="bg-transparent flex-1 p-4">
-            <img src={project.imageProject} alt="" className='w-full h-full object-fill rounded-xl' />
+            <img src={project.imageProject} alt="" className='w-full h-full min-h-72 object-fill rounded-xl' />
           </div>
           <div className='flex flex-col flex-1 bg-beautyNoir'>
             <div className="p-4 pb-0">
@@ -81,10 +88,14 @@ export function Projects() {
                 </div>
               </div>
             </div>
-            <div className='px-4 text-tertiary font-bold flex-1'>
-              <p>
-                {project.description}
-              </p>
+            <div className='pl-4 pr-8 text-tertiary font-medium flex-1'>
+              {project.description.split('\n').map((paragraph, index) => (
+                <p
+                  key={index}
+                  className={`text-white mb-2 leading-relaxed ${index > 0 ? 'mt-2.5' : ''}`}>
+                  {paragraph}
+                </p>
+              ))}
             </div>
             <div className='flex px-4 gap-4 pt-6 pb-8 ml-4'>
               <RoundedButton onClick={() => { } } type={'button'} to={project.deployUrl}>Ver Projeto</RoundedButton>

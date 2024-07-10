@@ -3,7 +3,7 @@ import aspas from '../../../../assets/aspas.png';
 export function AboutMe() {
   return (
     <section className="py-40 px-6 sm:px-10 lg:px-20 bg-gradient-to-b from-beautyNoir to-beautyBrunette">
-      <div className="max-w-7xl mx-auto border border-black/50 bg-black/30 p-8 rounded-3xl">
+      <div className="max-w-5xl mx-auto border border-black/50 bg-black/30 p-8 rounded-3xl">
         <div>
           <div className="flex justify-between gap-3">
             <div className='md:text-justify'>
