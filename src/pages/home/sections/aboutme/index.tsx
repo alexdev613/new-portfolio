@@ -2,7 +2,7 @@ import aspas from '../../../../assets/aspas.png';
 
 export function AboutMe() {
   return (
-    <section className="py-40 px-6 sm:px-10 lg:px-20 bg-gradient-to-b from-beautyNoir to-beautyBrunette">
+    <section className="py-40 px-6 sm:px-10 lg:px-20 bg-gradient-to-b from-beautyNoir to-beautyBrunette overflow-x-hidden">
       <div className="max-w-5xl mx-auto bg-black/30 p-8 rounded-3xl">
         <div>
           <div className="flex justify-between gap-3">
@@ -51,7 +51,7 @@ export function AboutMe() {
               <img
                 src="https://avatars.githubusercontent.com/u/82345139?v=4"
                 alt="Avatar"
-                className="rounded-full border border-l-tertiary w-[45%] sm:w-[55%] md:w-[85%] mx-auto z-50 min-w-[200px] mb-4"
+                className="rounded-full border border-l-tertiary w-[45%] sm:w-[55%] md:w-[85%] mx-auto z-50 min-w-[180px] mb-4"
                 data-aos="zoom-in-left"
                 data-aos-duration="1000"
                 />

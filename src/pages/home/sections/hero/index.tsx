@@ -5,7 +5,7 @@ import { StyledButton } from "../../../../components/styledButton";
 
 export function Hero() {
   return (
-    <div className="bg-beautyNoir h-screen-minus-header flex pt-20 md:pt-40 px-4">
+    <div className="bg-beautyNoir h-screen-minus-header flex pt-20 md:pt-40 px-4 overflow-x-hidden">
       <div className="mx-auto max-w-5xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
           <div className="col-span-1 md:col-span-4 relative" data-aos="fade-right" data-aos-duration="1000">

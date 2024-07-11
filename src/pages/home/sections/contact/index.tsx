@@ -4,8 +4,14 @@ import { StyledButton } from "../../../../components/styledButton";
 export function Contact() {
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-beautyBrunette to-beautyNoirToBrunette flex flex-col items-center py-24">
-      <h2 className="text-5xl font-sans font-bold mb-20 text-tertiary" data-aos="fade-left" data-aos-duration="1000">Formas de contato:</h2>
+    <section className="min-h-screen bg-gradient-to-b from-beautyBrunette to-beautyNoirToBrunette flex flex-col items-center py-24 overflow-x-hidden">
+      <h2
+        className="text-3xl md:text-5xl font-sans font-bold mb-20 text-tertiary pl-2"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        Formas de contato:
+      </h2>
       
       <div className="flex flex-wrap gap-14 mb-16 justify-center max-w-5xl w-full px-6">
         <div

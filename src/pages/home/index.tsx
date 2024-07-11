@@ -6,7 +6,7 @@ import { Skills } from "./sections/skills";
 
 export function Home() {
     return (
-      <div>
+      <div className="overflow-x-hidden">
 
         <Hero />
         <AboutMe />
