@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-center bg-black/90 py-24 px-8 text-center">
+    <footer className="flex flex-col items-center justify-center bg-black/90 pt-14 pb-28 px-8 text-center overflow-x-hidden">
     
-      <p className="text-tertiary" data-aos="fade-right" data-aos-duration="800">Implementado por Alex Nacimento © - 2024</p>
-      <hr className="bg-white w-full max-w-md m-4 mx-4" />
       <div className="flex gap-4">
         <Link to="https://github.com/alexdev613/" target="_blank" data-aos="fade-left" data-aos-duration="800">
           <FaGithub size={30} color="white" />
@@ -18,6 +16,8 @@ export function Footer() {
           <FaWhatsapp size={30} color="white" />
         </Link>
       </div>
+      <hr className="bg-white w-full max-w-md m-4 mx-4" />
+      <p className="text-tertiary" data-aos="fade-right" data-aos-duration="800">© Alex Heisenberg - 2024</p>
     </footer>
   )
 }
