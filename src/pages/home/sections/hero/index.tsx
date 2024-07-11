@@ -27,22 +27,24 @@ export function Hero() {
             <div className="flex flex-wrap justify-center pt-3 space-y3 md:space-y-0 md:space-x-3">
               <div className="w-full flex flex-col md:flex-row justify-center gap-5">
                 <StyledButton
+                  className="bg-transparent text-white hover:bg-tertiary hover:text-beautyNoir"
                   onClick={() => {}}
                   type={'button'}
                   data-aos="fade-up-right"
-                   data-aos-duration="1200"
+                  data-aos-duration="1200"
                 >
                   <MdDownload size={20}  />
-                  Download CV
+                    Download CV
                 </StyledButton>
                 <StyledButton
+                  className="bg-transparent text-white hover:bg-tertiary hover:text-beautyNoir"
                   onClick={() => {}}
                   type={'button'}
                   data-aos="fade-up-left"
                   data-aos-duration="1200"
                 >
                   <MdOutlineMailOutline size={20}  />
-                  Download CV
+                    Contact me
                 </StyledButton>
               </div>
             </div>

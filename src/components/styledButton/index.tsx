@@ -8,12 +8,12 @@ interface StyledButtonProps extends Omit <HTMLProps<HTMLButtonElement>, 'type'> 
 
 export function StyledButton({ to, children, ...props }: StyledButtonProps ) {
   
-  const styles = "bg-transparent border border-white rounded px-0 py-1 w-full text-white inline-flex items-center justify-center gap-2 cursor-pointer hover:bg-gray-200 hover:text-beautyNoir transition duration-700 px-3"
+  const styles = "border rounded px-0 py-1 w-full inline-flex items-center justify-center gap-2 cursor-pointer px-3"
 
   const buttonContent = (
     <button
       {...props}
-      className={styles}
+      className={`${styles} ${props.className}`}
     >
       {children}
     </button>
