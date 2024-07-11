@@ -53,7 +53,6 @@ export function AboutMe() {
 
               </p>
             <div className="relative text-center">
-              oi
               <img
                 src="https://avatars.githubusercontent.com/u/82345139?v=4"
                 alt="Avatar"

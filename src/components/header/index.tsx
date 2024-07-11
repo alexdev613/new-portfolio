@@ -11,11 +11,13 @@ export function Header() {
               src={logo}
               alt="Logo"
               className='h-20 w-20'
+              data-aos="fade-down-right"
+              data-aos-duration="700"
             />
           </Link>
         </div>
         
-        <nav className='flex flex-1 justify-around font-medium text-tertiary w-full mx-auto'>
+        <nav className='flex flex-1 justify-around font-medium text-tertiary w-full mx-auto' data-aos="fade-left" data-aos-duration="1000">
           <Link
             to="/"
             className='hover:text-white'
