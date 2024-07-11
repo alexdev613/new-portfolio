@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export function Blog() {
   return (
-    <div>
-      <h1>Página Principal do blog</h1>
-      <Link to="/">Página Home</Link>
+    <div className="h-screen-minus-header text-center flex flex-col items-center justify-center">
+      <h1 className="text-black text-7xl">Desculpe, estamos em Manutenção</h1>
+      <Link to="/" className="text-xl font-semibold mt-8">Volte para a Página Home</Link>
     </div>
   )
 }
