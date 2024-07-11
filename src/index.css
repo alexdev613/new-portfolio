@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .placeholder-light {
   @apply placeholder-tertiary;
 }

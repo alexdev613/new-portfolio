@@ -18,6 +18,15 @@ export function Footer() {
       </div>
       <hr className="bg-white w-full max-w-md m-4 mx-4" />
       <p className="text-tertiary" data-aos="fade-right" data-aos-duration="800">© Alex Heisenberg - 2024</p>
+
+      <a
+        href="#top"
+        className="absolute bg-beltColor w-19 pt-3 text-tertiary h-[87px] mt-56 rounded-tl-lg rounded-tr-lg
+        text-center md:right-40 right-10 m-0 p-2 font-black no-underline"
+      >
+        Topo
+      </a>
+
     </footer>
   )
 }
