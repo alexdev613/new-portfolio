@@ -13,7 +13,7 @@ export function Footer() {
         <Link to="https://www.linkedin.com/in/alex-nascimento-b818b694/" target="_blank" data-aos="fade-left" data-aos-duration="1500">
           <FaLinkedin size={30} color="white" />
         </Link>
-        <Link to="/" target="_blank" data-aos="fade-left" data-aos-duration="2000">
+        <Link to="https://api.whatsapp.com/send?phone=+5587981157269&text=Gostaria%20de%20mais%20informações%20sobre%20seu%20trabalho%20de%20programação%20web" target="_blank" data-aos="fade-left" data-aos-duration="2000">
           <FaWhatsapp size={30} color="white" />
         </Link>
       </div>
