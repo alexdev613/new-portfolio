@@ -17,7 +17,11 @@ export function Header() {
           </Link>
         </div>
         
-        <nav className='flex flex-1 justify-around font-medium text-tertiary w-full mx-auto' data-aos="fade-left" data-aos-duration="1000">
+        <nav
+          className='flex flex-1 justify-around font-medium gap-4 text-tertiary w-full mx-auto'
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <Link
             to="/"
             className='hover:text-white'
