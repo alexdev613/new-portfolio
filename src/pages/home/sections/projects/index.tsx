@@ -54,8 +54,10 @@ const projects: ProjectProps[] = [
 
 export function Projects() {
   return (
-    <section className="min-h-screen flex flex-col items-center bg-beautyBrunette py-20 px-6 sm:px-10 lg:px-20">
-      
+    <section
+      id='projects'
+      className="min-h-screen flex flex-col items-center bg-beautyBrunette py-20 px-6 sm:px-10 lg:px-20"
+    >  
       <div className="max-w-5xl w-full mb-16">
         <h1
           className="text-white text-3xl font-bold"

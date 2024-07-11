@@ -22,8 +22,8 @@ export function Hero() {
             </div>
           </div>
           <div className="col-span-1 md:col-span-8 text-center flex flex-col justify-center px-1">
-            <h1 className="font-gothic font-normal text-tertiary text-4xl md:text-6xl md:mb-4 mb-2" data-aos="fade-left" data-aos-duration="1000">Alex Heisenberg</h1>
-            <h2 className="font-gothic font-extralight text-tertiary text-2xl md:text-3xl pb-2"  data-aos="fade-right" data-aos-duration="1000">I'm a Software Engineer</h2>
+            <h1 className="font-gothic font-normal text-tertiary text-4xl md:text-6xl md:mb-4 mb-2" data-aos="fade-left" data-aos-duration="1000">Alex Nascimento</h1>
+            <h2 className="font-gothic font-extralight text-tertiary text-2xl md:text-3xl pb-2"  data-aos="fade-right" data-aos-duration="1000">Desenvolvedor Web</h2>
             <div className="flex flex-wrap justify-center pt-3 space-y3 md:space-y-0 md:space-x-3">
               <div className="w-full flex flex-col md:flex-row justify-center gap-5">
                 <StyledButton

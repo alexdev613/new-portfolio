@@ -1,4 +1,6 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import aspas from '../../../../assets/aspas.png';
+import { Link } from 'react-router-dom';
 
 export function AboutMe() {
   return (
@@ -41,20 +43,42 @@ export function AboutMe() {
                 data-aos="fade-up-right"
                 data-aos-duration="1000"
               >
-                Olá! Sou Alex Heisenberg, um apaixonado desenvolvedor de sites corporativos e
+                Olá! Sou Alex Nascimento, um apaixonado desenvolvedor de sites corporativos e
                 aplicativos web com mais de 3 anos de experiência. Baseado em Pernambuco, trabalho
                 remotamente, garantindo serviços de qualidade para clientes em qualquer lugar do mundo.
+                <br /><br />
                 Estou sempre em busca de novos desafios e oportunidades para aprimorar minha carreira.
+                Meu propósito é desenvolver interfaces intuitivas e criar experiências de usuário cativantes,
+                utilizando boas práticas de design para construir soluções eficientes e acessíveis.
 
               </p>
             <div className="relative text-center">
+              oi
               <img
                 src="https://avatars.githubusercontent.com/u/82345139?v=4"
                 alt="Avatar"
                 className="rounded-full border border-l-tertiary w-[45%] sm:w-[55%] md:w-[85%] mx-auto z-50 min-w-[180px] mb-4"
                 data-aos="zoom-in-left"
                 data-aos-duration="1000"
-                />
+              />
+              <div className='flex justify-center gap-4 mt-6'>
+                <Link
+                  to="https://github.com/alexdev613/"
+                  target='_blank'
+                  data-aos="fade-up-left"
+                  data-aos-duration="1000"
+                >
+                  <FaGithub size={30} color='#EEE' />
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/in/alex-nascimento-b818b694/"
+                  target='_blank'
+                  data-aos="fade-up-right"
+                  data-aos-duration="1000"
+                >
+                  <FaLinkedin size={30} color='#EEE' />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
