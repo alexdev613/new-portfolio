@@ -10,6 +10,7 @@ import css from '../../../../assets/css3-original.svg'
 import js from '../.././../../assets/js.svg'
 
 import { RoundedButton } from '../../../../components/roundedButton'
+import { Link } from 'react-router-dom'
 
 interface ProjectProps {
   id: string;
@@ -104,6 +105,12 @@ export function Projects() {
           </div>
         </div>
       ))}
+
+      <div className='w-full max-w-5xl'>
+        <Link to="https://github.com/alexdev613" target='_blank'>
+          <h4 className='float-end font-sans font-semibold text-tertiary hover:text-white'>Ver todos projetos ...</h4>
+        </Link>
+      </div>
 
     </section>
   )
