@@ -1,6 +1,7 @@
 import webcarros from '../../../../assets/project-webcarros.png'
 import controle from '../../../../assets/controlefinancas.png'
 import criptoapp from '../../../../assets/criptoapp.png'
+import petshopdev from '../../../../assets/petshopdev.png'
 import react from '../../../../assets/react-original.svg'
 import tailwind from '../../../../assets/tailwind.svg'
 import typescript from '../../../../assets/ts.svg'
@@ -33,7 +34,16 @@ const projects: ProjectProps[] = [
     technologies: [html, css, js]
   },
   {
-    id: "2",
+    id: '2',
+    title: 'CriptoDev',
+    description: "O projeto usa requisições HTTP e APIs para consultar mais de 400 criptomoedas em tempo real, incluindo a cotação do dólar para Real. Os usuários podem ver detalhes das moedas ao clicar em seus nomes. A página inicial lista 10 moedas e permite carregar mais 10 com o botão 'Carregar mais'.\nEste projeto foi feito com React, CSS, TypeScript e outras tecnologias preciosas!",
+    imageProject: criptoapp,
+    repository: 'https://github.com/alexdev613/criptoapp',
+    deployUrl: 'https://criptoapp-alexdev.vercel.app/',
+    technologies: [ react, css, typescript]
+  },
+  {
+    id: "3",
     title: "WebCarros",
     description: "O projeto WebCarros é um sistema semelhante ao Webmotors, desenvolvido com React, TailwindCSS, TypeScript e Firebase.\nEle permite cadastro e login de usuários para ver e cadastrar carros à venda. Inclui um painel de gerenciamento para visualizar e excluir veículos cadastrados.\nA Home e os detalhes dos carros são acessíveis a todos, com páginas administrativas restritas a usuários logados, usando Context API para gerenciar estados globais e compartilhar dados.",
     imageProject: webcarros,
@@ -42,13 +52,13 @@ const projects: ProjectProps[] = [
     technologies: [ react, tailwind, typescript, firebase]
   },
   {
-    id: '3',
-    title: 'CriptoDev',
-    description: "O projeto usa requisições HTTP e APIs para consultar mais de 400 criptomoedas em tempo real, incluindo a cotação do dólar para Real. Os usuários podem ver detalhes das moedas ao clicar em seus nomes. A página inicial lista 10 moedas e permite carregar mais 10 com o botão 'Carregar mais'.\nEste projeto foi feito com React, CSS, TypeScript e outras tecnologias preciosas!",
-    imageProject: criptoapp,
-    repository: 'https://github.com',
-    deployUrl: 'https://criptoapp-alexdev.vercel.app/',
-    technologies: [ react, css, typescript]
+    id: '4',
+    title: 'PetShopDev',
+    description: "O projeto se baseia em explorar a funcionalidade de um carrinho de compras com produtos no tema de Pet Shop.\n Esse projeto foi feito com React, TailwindCSS, TypeScript, React Router Dom para roteamento de páginas, e implementado com Context API para gerenciar estados globais da aplicação e trazer a funcionalidade de carrinho de compras com dinamismo e eficiência.",
+    imageProject: petshopdev,
+    repository: 'https://github.com/alexdev613/devpetshop-to-deploy',
+    deployUrl: 'https://petshopdev-alexdeveloper.vercel.app/',
+    technologies: [ react, js, typescript]
   }
 ];
 
@@ -110,7 +120,7 @@ export function Projects() {
 
       <div className='w-full max-w-5xl'>
         <Link to="https://github.com/alexdev613" target='_blank'>
-          <h4 className='float-end font-sans font-semibold text-tertiary hover:text-white'>Ver todos projetos ...</h4>
+          <h4 className='float-end font-sans font-semibold text-lg text-tertiary hover:text-white'>Ver todos projetos ...</h4>
         </Link>
       </div>
 
