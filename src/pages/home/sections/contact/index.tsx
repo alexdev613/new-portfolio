@@ -6,6 +6,7 @@ export function Contact() {
   return (
     <section className="min-h-screen bg-gradient-to-b from-beautyBrunette to-beautyNoirToBrunette flex flex-col items-center py-24 overflow-x-hidden">
       <h2
+        id="contact"
         className="text-3xl md:text-5xl font-sans font-bold mb-20 text-tertiary pl-2"
         data-aos="fade-left"
         data-aos-duration="1000"
