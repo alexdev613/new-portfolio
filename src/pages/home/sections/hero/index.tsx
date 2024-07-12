@@ -5,6 +5,13 @@ import { StyledButton } from "../../../../components/styledButton";
 
 export function Hero() {
 
+  function handleDownloadCV() {
+    const link = document.createElement('a');
+    link.href = 'https://github.com/alexdev613/assets/raw/8efed3ded23544ca6edcda41206ca4a5c9763b7e/AlexNascimento_CV.pdf';
+    link.download = 'AlexNascimento_CV.pdf';
+    link.click();
+  }
+
   function handleScrollToContact() {
     const contactSection = document.getElementById('contactme');
     if (contactSection) {
@@ -35,7 +42,7 @@ export function Hero() {
               <div className="w-full flex flex-col md:flex-row justify-center gap-5">
                 <StyledButton
                   className="bg-transparent text-white hover:bg-tertiary hover:text-beautyNoir"
-                  onClick={() => {}}
+                  onClick={handleDownloadCV}
                   type={'button'}
                   data-aos="fade-up-right"
                   data-aos-duration="1200"
