@@ -70,7 +70,7 @@ export function AboutMe() {
                   <FaGithub size={30} color='#EEE' />
                 </Link>
                 <Link
-                  to="https://www.linkedin.com/in/alex-nascimento-b818b694/"
+                  to="https://www.linkedin.com/in/alexjfnascimento/"
                   target='_blank'
                   data-aos="fade-up-right"
                   data-aos-duration="1000"
