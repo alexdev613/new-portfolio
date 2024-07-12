@@ -1,7 +1,22 @@
 import { FiHome, FiMessageCircle, FiPhoneCall } from "react-icons/fi";
 import { StyledButton } from "../../../../components/styledButton";
+import { useForm } from "react-hook-form";
+
+type FormData = {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
 
 export function Contact() {
+
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
+
+  const onSubmit = (data: FormData) => {
+    console.log(data);
+    reset();
+  }
 
   return (
     <section className="min-h-screen bg-gradient-to-b from-beautyBrunette to-beautyNoirToBrunette flex flex-col items-center py-24 overflow-x-hidden">
@@ -58,45 +73,50 @@ export function Contact() {
           <p className="text-xs ml-2" data-aos="fade-right" data-aos-duration="1000">Get in touch</p>
         </div>
 
-        <form className="max-w-5xl w-full">
-          <div className="flex flex-col gap-4 w-full md:flex-row">
+        <form className="max-w-5xl w-full" onSubmit={handleSubmit(onSubmit)}>
+          <div
+            className="flex flex-col gap-4 w-full md:flex-row"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <input
-              className="flex-1 min-h-14 pl-4 rounded bg-beautyNoir placeholder-light text-white outline-none"
+              {...register("name", { required: "Nome é obrigatório" })}
+              className={`flex-1 min-h-14 pl-4 rounded bg-beautyNoir placeholder-light text-white outline-none ${ errors.name? "border border-red-600 placeholder-crimson-red" : "" }`}
               type="text"
-              placeholder="Seu Nome"
-              data-aos="fade-right"
-              data-aos-duration="2500"
+              placeholder={errors.name? errors.name.message : "Seu Nome"}
             />
             <input
-              className="flex-1 min-h-14 pl-4 rounded bg-beautyNoir placeholder-light text-white outline-none"
+              {...register("email", {required: "Email é obrigatório" })}
+              className={`flex-1 min-h-14 pl-4 rounded bg-beautyNoir placeholder-light text-white outline-none ${ errors.email? "border border-red-600 placeholder-crimson-red" : "" }`}
               type="email"
-              placeholder="E-mail"
-              data-aos="fade-right"
-              data-aos-duration="1200"
+              placeholder={errors.email? errors.email.message : "E-mail"}
             />
             <input
-              className="flex-1 min-h-14 pl-4 rounded bg-beautyNoir placeholder-light text-white outline-none"
+              {...register("phone", {required: "Telefone é obrigaróio" })}
+              className={`flex-1 min-h-14 pl-4 rounded bg-beautyNoir placeholder-light text-white outline-none ${ errors.phone? "border border-red-600 placeholder-crimson-red" : "" }`}
               type="text"
-              placeholder="Seu telefone"
-              data-aos="fade-right"
-              data-aos-duration="500"
+              placeholder={errors.phone? errors.phone.message : "Seu telefone"}
             />
           </div>
 
-          <div className="mt-4 w-full">
+          <div
+            className="mt-4 w-full"
+            data-aos="flip-left"
+            data-aos-duration="1200"
+          >
             <textarea
-              className="rounded resize-none w-full pl-4 pt-2 min-h-72 bg-beautyNoir placeholder-light md:min-w-0 text-white outline-none"
-              placeholder="Sua Mensagem ..."
-              data-aos="flip-left"
-              data-aos-duration="1200"
+              {...register("message", { required: "Sua mensagem é importante e obrigatória!" })}
+              className={`rounded resize-none w-full pl-4 pt-2 min-h-72 bg-beautyNoir placeholder-light md:min-w-0 text-white outline-none ${errors.message ? "border border-red-600 placeholder-crimson-red" : ""}`}
+              placeholder={errors.message ? errors.message.message : "Sua Mensagem"}
             />
+
           </div>
 
           <div className="bg-beautyNoir/90 w-full mt-4 md:w-96" data-aos="zoom-in-up"
               data-aos-duration="1000">
             <StyledButton
               className="bg-transparent text-tertiary font-bold hover:bg-tertiary hover:text-beautyNoir py-3 transition-colors duration-500"
-              type="button"
+              type="submit"
             >
               ENVIAR MENSAGEM
             </StyledButton>

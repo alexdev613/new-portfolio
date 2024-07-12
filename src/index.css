@@ -19,6 +19,10 @@ html {
   @apply placeholder-tertiary;
 }
 
+.placeholder-crimson-red::placeholder {
+  color: #DC2626; /* Escolha a cor de vermelho que deseja */
+}
+
 .flip-card {
   perspective: 1000px;
 }
