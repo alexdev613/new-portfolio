@@ -53,8 +53,8 @@ export function Contact() {
       </div>
 
       <div className="max-w-5xl w-full px-6">
-        <div className="text-tertiary mb-4">
-          <h3 className="text-3xl"data-aos="fade-left" data-aos-duration="1000" >Entre em Contato</h3>
+        <div className="text-tertiary mb-4" id="contactme">
+          <h3 className="text-3xl"data-aos="fade-left" data-aos-duration="1000">Entre em Contato</h3>
           <p className="text-xs ml-2" data-aos="fade-right" data-aos-duration="1000">Get in touch</p>
         </div>
 

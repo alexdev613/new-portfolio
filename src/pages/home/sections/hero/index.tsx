@@ -4,6 +4,13 @@ import { StyledButton } from "../../../../components/styledButton";
 
 
 export function Hero() {
+
+  function handleScrollToContact() {
+    const contactSection = document.getElementById('contactme');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   return (
     <div className="bg-beautyNoir h-screen-minus-header flex pt-20 md:pt-40 px-4 overflow-x-hidden">
       <div className="mx-auto max-w-5xl">
@@ -38,7 +45,7 @@ export function Hero() {
                 </StyledButton>
                 <StyledButton
                   className="bg-transparent text-white hover:bg-tertiary hover:text-beautyNoir"
-                  onClick={() => {}}
+                  onClick={handleScrollToContact}
                   type={'button'}
                   data-aos="fade-up-left"
                   data-aos-duration="1200"
