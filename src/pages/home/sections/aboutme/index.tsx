@@ -1,5 +1,6 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import aspas from '../../../../assets/aspas.png';
+import alex from '../../../../assets/mirante-paulista.jpg';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export function AboutMe() {
@@ -54,9 +55,9 @@ export function AboutMe() {
               </p>
             <div className="relative text-center">
               <img
-                src="https://avatars.githubusercontent.com/u/82345139?v=4"
+                src={alex}
                 alt="Avatar"
-                className="rounded-full border border-l-tertiary w-[45%] sm:w-[55%] md:w-[85%] mx-auto z-50 min-w-[180px] mb-4"
+                className="rounded-full border border-l-tertiary w-[320px] mx-auto z-50 min-w-[200px] mb-4"
                 data-aos="zoom-in-left"
                 data-aos-duration="1000"
               />
