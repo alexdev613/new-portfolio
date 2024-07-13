@@ -1,6 +1,8 @@
 import { FiHome, FiMessageCircle, FiPhoneCall } from "react-icons/fi";
 import { StyledButton } from "../../../../components/styledButton";
 import { useForm } from "react-hook-form";
+import { useRef } from "react";
+import emailjs from 'emailjs-com'
 
 type FormData = {
   name: string;
@@ -11,10 +13,24 @@ type FormData = {
 
 export function Contact() {
 
+  const form = useRef<HTMLFormElement>(null);
+
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
     console.log(data);
+    if (form.current) {
+      emailjs.sendForm('service_d1h6pzw', 'template_ia9dmax', form.current, "oEQ6JhEk805mIItpC")
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+    }
+
     reset();
   }
 
@@ -73,7 +89,7 @@ export function Contact() {
           <p className="text-xs ml-2" data-aos="fade-right" data-aos-duration="1000">Get in touch</p>
         </div>
 
-        <form className="max-w-5xl w-full" onSubmit={handleSubmit(onSubmit)}>
+        <form className="max-w-5xl w-full" onSubmit={handleSubmit(onSubmit)} ref={form} >
           <div
             className="flex flex-col gap-4 w-full md:flex-row"
             data-aos="fade-left"
@@ -92,7 +108,7 @@ export function Contact() {
               placeholder={errors.email? errors.email.message : "E-mail"}
             />
             <input
-              {...register("phone", {required: "Telefone é obrigaróio" })}
+              {...register("phone", {required: "Telefone é obrigatório" })}
               className={`flex-1 min-h-14 pl-4 rounded bg-beautyNoir placeholder-light text-white outline-none ${ errors.phone? "border border-red-600 placeholder-crimson-red" : "" }`}
               type="text"
               placeholder={errors.phone? errors.phone.message : "Seu telefone"}
