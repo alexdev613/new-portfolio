@@ -34,6 +34,7 @@ export function Contact() {
     reset();
   }
 
+
   return (
     <section className="min-h-screen bg-gradient-to-b from-beautyBrunette to-beautyNoirToBrunette flex flex-col items-center py-24 overflow-x-hidden">
       <h2
@@ -45,6 +46,8 @@ export function Contact() {
         Formas de contato:
       </h2>
       
+      {/* ------ "Cards" ------ */}
+
       <div className="flex flex-wrap gap-14 mb-16 justify-center max-w-5xl w-full px-6">
         <div
           className="flex flex-col gap-y-2 w-72 h-72 border border-black justify-center items-center p-2 rounded bg-tertiary/90"
@@ -88,6 +91,11 @@ export function Contact() {
           <h3 className="text-3xl"data-aos="fade-left" data-aos-duration="1000">Entre em Contato</h3>
           <p className="text-xs ml-2" data-aos="fade-right" data-aos-duration="1000">Get in touch</p>
         </div>
+
+        {/* ------ "Cards" ------ */}
+
+
+        {/* ---- Formulário ---- */}
 
         <form className="max-w-5xl w-full" onSubmit={handleSubmit(onSubmit)} ref={form} >
           <div
@@ -138,6 +146,9 @@ export function Contact() {
             </StyledButton>
           </div>
         </form>
+
+        {/* ---- Formulário ---- */}
+
       </div>
     </section>
   );
