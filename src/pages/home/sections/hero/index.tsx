@@ -7,7 +7,7 @@ export function Hero() {
 
   function handleDownloadCV() {
     const link = document.createElement('a');
-    link.href = 'https://github.com/alexdev613/assets/raw/8efed3ded23544ca6edcda41206ca4a5c9763b7e/AlexNascimento_CV.pdf';
+    link.href = 'https://github.com/alexdev613/assets/raw/51cd9bbe18cb6c8570b6053f57509e608e38a597/AlexNascimento_CV.pdf';
     link.download = 'AlexNascimento_CV.pdf';
     link.click();
   }
