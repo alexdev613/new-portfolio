@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import { useRef } from "react";
 import emailjs from 'emailjs-com'
 
+import toast from "react-hot-toast";
+
 type FormData = {
   name: string;
   email: string;
@@ -24,9 +26,11 @@ export function Contact() {
       .then(
         () => {
           console.log('SUCCESS!');
+          toast.success("Mensagem enviada com sucesso!");
         },
         (error) => {
           console.log('FAILED...', error.text);
+          toast.error("Tivemos um erro com a api, mande-nos um olá no Whatsapp!")
         },
       );
     }

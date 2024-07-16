@@ -19,13 +19,13 @@ export function Footer() {
       </div>
       <hr className="bg-white w-full max-w-md m-4 mx-4" />
       <p className="text-tertiary" data-aos="fade-right" data-aos-duration="800">© Alex Heisenberg - 2024</p>
-      <div className="flex justify-center">
-      <img src={logo} alt="Logo" className="absolute w-20 h-20"/>
+      <div className="flex justify-center mb-4">
+        <img src={logo} alt="Logo" className="absolute w-20 h-20"/>
       </div>
 
       <a
         href="#top"
-        className="absolute bg-beltColor w-16 pt-3 text-tertiary h-[87px] mt-56 rounded-tl-lg rounded-tr-lg
+        className="absolute bg-beltColor w-16 pt-3 text-tertiary h-[103px] mt-56 rounded-tl-lg rounded-tr-lg
         text-center md:right-40 right-8 m-0 p-2 font-black"
       >
         Topo
