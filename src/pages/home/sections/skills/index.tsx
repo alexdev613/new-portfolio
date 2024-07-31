@@ -6,7 +6,7 @@ import tailwindIcon from '../../../../assets/tailwind.svg'
 import styledIcon from '../../../../assets/styled.png'
 import reactIcon from '../../../../assets/react-original.svg'
 import nodeIcon from '../../../../assets/nodejs.svg'
-import viteIcon from '../../../../assets/vite.svg'
+import nextjsIcon from '../../../../assets/next-js.png'
 import firebaseIcon from '../../../../assets/firebase-plain.svg'
 import gitIcon from '../../../../assets/git.svg'
 import githubIcon from '../../../../assets/github-original.svg'
@@ -28,8 +28,8 @@ interface Skill {
     { id: '5', technologyIcon: tailwindIcon, name: "TailWind", url: "https://tailwindcss.com/docs/installation"},
     { id: '6', technologyIcon: styledIcon, name: "Styled-Components", url: "https://styled-components.com/docs"},
     { id: '7', technologyIcon: reactIcon, name: "React JS", url: "https://pt-br.legacy.reactjs.org/docs/getting-started.html"},
-    { id: '8', technologyIcon: nodeIcon, name: "Node JS", url: "https://nodejs.org/docs/latest/api/documentation.html", bgColor: "bg-white"},
-    { id: '9', technologyIcon: viteIcon, name: "Vite", url: "https://vitejs.dev/"},
+    { id: '8', technologyIcon: nextjsIcon, name: "NextJS", url: "https://nextjs.org/docs", bgColor: 'bg-white'},
+    { id: '9', technologyIcon: nodeIcon, name: "Node JS", url: "https://nodejs.org/docs/latest/api/documentation.html", bgColor: "bg-white"},
     { id: '10', technologyIcon: firebaseIcon, name: "Firebase", url: "https://firebase.google.com/docs/guides?hl=pt-br"},
     { id: '11', technologyIcon: gitIcon, name: "Git", url: "https://git-scm.com/docs/git/pt_BR"},
     { id: '12', technologyIcon: githubIcon, name: "Github", url: "https://github.com/alexdev613/", bgColor: "bg-white"}
@@ -52,7 +52,7 @@ export function Skills() {
                 target='_blank'
                 className='flex flex-col items-center'
               >
-                <img src={skill.technologyIcon} alt={skill.name} className={`h-16 w-16 ${skill.bgColor}`} />
+                <img src={skill.technologyIcon} alt={skill.name} className={`h-16 w-16 ${skill.bgColor} rounded-sm p-[1px]`} />
                 <p className='text-white'>{skill.name}</p>
               </Link>
             </div>
