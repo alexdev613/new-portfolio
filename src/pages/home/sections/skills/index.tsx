@@ -2,7 +2,7 @@ import htmlIcon from '../../../../assets/html5-original.svg'
 import cssIcon from '../../../../assets/css3-original.svg'
 import jsIcon from '../.././../../assets/js.svg'
 import tsIcon from '../.././../../assets/ts.svg'
-// import sass from '../../../../assets/sass.svg'
+import sass from '../../../../assets/sass.svg'
 import tailwindIcon from '../../../../assets/tailwind.svg'
 import styledIcon from '../../../../assets/styled.png'
 import reactIcon from '../../../../assets/react-original.svg'
@@ -26,7 +26,7 @@ interface Skill {
     { id: '2', technologyIcon: cssIcon, name: 'CSS', url: "https://developer.mozilla.org/pt-BR/docs/Web/CSS"},
     { id: '3', technologyIcon: jsIcon, name: 'JavaScript', url: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"},
     { id: '4', technologyIcon: tsIcon, name: "TypeScript", url: "https://www.typescriptlang.org/pt/docs/"},
-    // { id: '5', technologyIcon: sass, name: "SASS", url: "https://sass-lang.com/documentation/"},
+    { id: '5', technologyIcon: sass, name: "SASS", url: "https://sass-lang.com/documentation/"},
     { id: '6', technologyIcon: tailwindIcon, name: "TailWind", url: "https://tailwindcss.com/docs/installation"},
     { id: '7', technologyIcon: styledIcon, name: "Styled-Components", url: "https://styled-components.com/docs"},
     { id: '8', technologyIcon: reactIcon, name: "React JS", url: "https://pt-br.legacy.reactjs.org/docs/getting-started.html"},
@@ -34,7 +34,7 @@ interface Skill {
     { id: '10', technologyIcon: nodeIcon, name: "Node JS", url: "https://nodejs.org/docs/latest/api/documentation.html", bgColor: "bg-white"},
     { id: '11', technologyIcon: firebaseIcon, name: "Firebase", url: "https://firebase.google.com/docs/guides?hl=pt-br"},
     { id: '12', technologyIcon: gitIcon, name: "Git", url: "https://git-scm.com/docs/git/pt_BR"},
-    { id: '13', technologyIcon: githubIcon, name: "Github", url: "https://github.com/alexdev613/", bgColor: "bg-white"}
+    { id: '13', technologyIcon: githubIcon, name: "Github", url: "https://github.com/alexdev613/", bgColor: "bg-white"},
   ];
 
 export function Skills() {
