@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.png'
+import logo from '../../assets/AlexDesenvolvedor.png'
 import { Link } from 'react-router-dom';
 
 export function Header() {
@@ -10,7 +10,7 @@ export function Header() {
             <img
               src={logo}
               alt="Logo"
-              className='h-20 w-20'
+              className='h-16 w-16 rounded-full'
               data-aos="fade-down-right"
               data-aos-duration="700"
             />

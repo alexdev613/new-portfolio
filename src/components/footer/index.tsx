@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/AlexDesenvolvedor.png";
 
 export function Footer() {
   return (
@@ -20,7 +20,7 @@ export function Footer() {
       <hr className="bg-white w-full max-w-md m-4 mx-4" />
       <p className="text-tertiary" data-aos="fade-right" data-aos-duration="800">© Alex Heisenberg - 2024</p>
       <div className="flex justify-center mb-4">
-        <img src={logo} alt="Logo" className="absolute w-20 h-20"/>
+        <img src={logo} alt="Logo" className="absolute w-24 h-24 rounded-full"/>
       </div>
 
       <a
