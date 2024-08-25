@@ -47,19 +47,27 @@ export function AboutMe() {
                 {/* Olá! Sou Alex Nascimento, um apaixonado desenvolvedor de sites corporativos e
                 aplicativos web com mais de 3 anos de experiência. Baseado em Pernambuco, trabalho
                 remotamente, garantindo serviços de qualidade para clientes em qualquer lugar do mundo. */}
-                Sua negócio precisa de um sistema web? Sou um desenvolvedor full-stack, e desde 2020 e crio
+                {/* Seu negócio precisa de um sistema web? Sou um desenvolvedor full-stack, e desde 2020 e crio
                 sistemas web 100% personalizados para empresas, de acordo com seus requisitos. Trabalhando
                 com tecnologias como JavaScript, TypeScript, ReactJS, NextJS, Firebase e NodeJS. Juntas 
-                elas são capazes de dar um resultado surpreendente na criação de um sistema robusto e de qualidade.
+                elas são capazes de dar um resultado surpreendente na criação de um sistema robusto e de qualidade. */}
                 
+                Seu negócio precisa de um site ou sistema web? Sou um desenvolvedor full-stack, especializado em
+                criar sistemas web 100% personalizados para empresas de acordo com seus requisitos desde
+                2021. Utilizo tecnologias modernas como JavaScript, TypeScript, ReactJS, NextJS, Firebase e
+                NodeJS para entregar soluções robustas e de alta qualidade.
                 <br /><br />
                 {/* Estou sempre em busca de novos desafios e oportunidades para aprimorar minha carreira.
                 Meu propósito é desenvolver interfaces intuitivas e criar experiências de usuário cativantes,
                 utilizando boas práticas de design para construir soluções eficientes e acessíveis. */}
-                Os sistemas web já desenvolvidos são fechados, apenas para uso interno
-                dos funcionários que usa o sistema. Não tenho autorização para disponibilizar
+                {/* Os sistemas web já desenvolvidos são fechados, apenas para uso interno
+                dos funcionários que usam o sistema. Não tenho autorização para disponibilizar
                 uma versão para demonstração. Mas, você poder ver outros trabalhos que fiz para demosntração
-                na seção <Link to='#projects' target='_parent' className='text-sky-400'>Portfolio</Link>.
+                na seção <Link to='#projects' target='_parent' className='text-sky-400'>Portfolio</Link>. */}
+                Os sistemas que desenvolvo são utilizados internamente por empresas, garantindo a conformidade com
+                as normas da LGPD. Por motivos de segurança e confidencialidade, não posso disponibilizar versões de
+                demonstração desses sistemas. No entanto, você pode conferir outros trabalhos demonstrativos que
+                realizei na seção <Link to='#projects' target='_parent' className='text-sky-400'>Portfolio</Link>.
 
               </p>
             <div className="relative text-center">

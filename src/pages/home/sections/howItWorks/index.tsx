@@ -11,7 +11,7 @@ import resposividade from '../../../../assets/responsividade.png';
 export function HowItWorks() {
   return (
     <>
-      <section className='bg-beautyBrunette min-h-screen py-40 px-6 sm:px-10 lg:px-20 overflow-x-hidden'>
+      <section className='bg-beautyBrunette min-h-screen py-20 px-6 sm:px-10 lg:px-20 overflow-x-hidden'>
         <h1 className="text-white text-3xl text-center font-sans font-medium pb-8">COMO FUNCIONA?</h1>
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
           <section className="bg-beautyNoirToBrunette text-white rounded-xl flex flex-col items-center py-4">

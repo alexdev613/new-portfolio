@@ -39,7 +39,7 @@ interface Skill {
 
 export function Skills() {
   return (
-    <section className="bg-beautyBrunette min-h-screen py-40 px-6 sm:px-10 lg:px-20 overflow-x-hidden">
+    <section className="bg-beautyBrunette min-h-screen py-20 px-6 sm:px-10 lg:px-20 overflow-x-hidden">
       <div className="max-w-5xl mx-auto bg-black/30 p-8 rounded-3xl">
         <h1 className="text-white text-3xl text-center font-sans font-bold pb-4">Hard Skills</h1>
         <div className='text-center text-tertiary pb-2 leading-loose'>
