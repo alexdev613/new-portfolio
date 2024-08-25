@@ -12,7 +12,7 @@ export function HowItWorks() {
   return (
     <>
       <section className='bg-beautyBrunette min-h-screen py-20 px-6 sm:px-10 lg:px-20 overflow-x-hidden'>
-        <h1 className="text-white text-3xl text-center font-sans font-medium pb-8">COMO FUNCIONA?</h1>
+        <h1 className="text-white text-3xl text-center font-sans font-medium pb-8 mb-8">COMO FUNCIONA?</h1>
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
           <section className="bg-beautyNoirToBrunette text-white rounded-xl flex flex-col items-center py-4">
             <img src={requisitos} className=' w-16' alt="Imagem Requisitos" />
@@ -53,7 +53,7 @@ export function HowItWorks() {
 
         </section>
 
-        <h1 className="text-white text-3xl text-center font-sans font-medium py-8 mt-20">VANTAGENS</h1>
+        <h1 className="text-white text-3xl text-center font-sans font-medium py-8 mt-20 mb-8">VANTAGENS</h1>
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center">
           <section className="bg-beautyNoirToBrunette text-white rounded-xl flex flex-col items-center py-4">
             <img src={webIcon} className=' w-16' alt="Imagem Requisitos" />
