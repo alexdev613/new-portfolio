@@ -23,7 +23,7 @@ export function AboutMe() {
                 data-aos-duration="1000"
               >
                 Sou Desenvolvedor Web
-                <br />Front End
+                <br />Full Stack
               </p>
             </div>
               <div className="mt-0 md:flex justify-center hidden ">
@@ -44,13 +44,22 @@ export function AboutMe() {
                 data-aos="fade-up-right"
                 data-aos-duration="1000"
               >
-                Olá! Sou Alex Nascimento, um apaixonado desenvolvedor de sites corporativos e
+                {/* Olá! Sou Alex Nascimento, um apaixonado desenvolvedor de sites corporativos e
                 aplicativos web com mais de 3 anos de experiência. Baseado em Pernambuco, trabalho
-                remotamente, garantindo serviços de qualidade para clientes em qualquer lugar do mundo.
+                remotamente, garantindo serviços de qualidade para clientes em qualquer lugar do mundo. */}
+                Sua negócio precisa de um sistema web? Sou um desenvolvedor full-stack, e desde 2020 e crio
+                sistemas web 100% personalizados para empresas, de acordo com seus requisitos. Trabalhando
+                com tecnologias como JavaScript, TypeScript, ReactJS, NextJS, Firebase e NodeJS. Juntas 
+                elas são capazes de dar um resultado surpreendente na criação de um sistema robusto e de qualidade.
+                
                 <br /><br />
-                Estou sempre em busca de novos desafios e oportunidades para aprimorar minha carreira.
+                {/* Estou sempre em busca de novos desafios e oportunidades para aprimorar minha carreira.
                 Meu propósito é desenvolver interfaces intuitivas e criar experiências de usuário cativantes,
-                utilizando boas práticas de design para construir soluções eficientes e acessíveis.
+                utilizando boas práticas de design para construir soluções eficientes e acessíveis. */}
+                Os sistemas web já desenvolvidos são fechados, apenas para uso interno
+                dos funcionários que usa o sistema. Não tenho autorização para disponibilizar
+                uma versão para demonstração. Mas, você poder ver outros trabalhos que fiz para demosntração
+                na seção <Link to='#projects' target='_parent' className='text-sky-400'>Portfolio</Link>.
 
               </p>
             <div className="relative text-center">
