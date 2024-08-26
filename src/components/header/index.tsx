@@ -10,7 +10,7 @@ export function Header() {
             <img
               src={logo}
               alt="Logo"
-              className='h-16 w-16 rounded-full'
+              className='h-12 w-12 rounded-full'
               data-aos="fade-down-right"
               data-aos-duration="700"
             />
